@@ -1,0 +1,11 @@
+{
+  "extends": "eslint-config-egg",
+  "rules": {
+    "no-return-await": "error",
+    "no-console": "error",
+    "no-await-in-loop": "warn",
+    "array-bracket-spacing": 0,
+    "arrow-parens": ["error", "always"],
+    "generator-star-spacing": 0
+  }
+}

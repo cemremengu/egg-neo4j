@@ -1,0 +1,57 @@
+{
+  "name": "egg-neo4j",
+  "version": "1.0.0",
+  "description": "",
+  "eggPlugin": {
+    "name": "neo4j"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "neo4j-driver": "^1.6.1"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.9.0",
+    "egg-bin": "^4.7.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.17.2",
+    "eslint": "^4.19.1",
+    "eslint-config-egg": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config"
+  ],
+  "ci": {
+    "version": "8, 9",
+    "license": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cemremengu/egg-neo4j.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cemremengu/egg-neo4j/issues"
+  },
+  "homepage": "https://github.com/cemremengu/egg-neo4j#readme",
+  "author": "Cemre Mengu",
+  "license": "MIT"
+}
