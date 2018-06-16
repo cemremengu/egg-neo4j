@@ -8,7 +8,8 @@
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "neo4j"
   ],
   "dependencies": {
     "neo4j-driver": "^1.6.1"
