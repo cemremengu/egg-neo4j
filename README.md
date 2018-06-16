@@ -2,19 +2,16 @@
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
 [![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/egg-neo4j.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-neo4j
-[travis-image]: https://img.shields.io/travis/eggjs/egg-neo4j.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-neo4j
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-neo4j.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-neo4j?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-neo4j.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-neo4j
+[travis-image]: https://img.shields.io/travis/cemremengu/egg-neo4j.svg?style=flat-square
+[travis-url]: https://travis-ci.org/cemremengu/egg-neo4j
+[david-image]: https://img.shields.io/david/cemremengu/egg-neo4j.svg?style=flat-square
+[david-url]: https://david-dm.org/cemremengu/egg-neo4j
 [snyk-image]: https://snyk.io/test/npm/egg-neo4j/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-neo4j
 [download-image]: https://img.shields.io/npm/dm/egg-neo4j.svg?style=flat-square

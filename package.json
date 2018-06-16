@@ -1,7 +1,7 @@
 {
   "name": "egg-neo4j",
   "version": "1.0.0",
-  "description": "",
+  "description": "Neo4J plugin for egg framework",
   "eggPlugin": {
     "name": "neo4j"
   },
