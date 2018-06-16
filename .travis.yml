@@ -3,6 +3,8 @@ language: node_js
 node_js:
   - '8'
   - '9'
+services:
+  - neo4j
 install:
   - npm i npminstall && npminstall
 script:
