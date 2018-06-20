@@ -17,9 +17,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-neo4j.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-neo4j
 
-<!--
-Description here.
--->
+Neo4j for egg framework.
 
 ## Install
 
@@ -41,18 +39,39 @@ exports.neo4j = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.neo4j = {};
+exports.neo4j = {
+  client: {
+    url: 'bolt://127.0.0.1',
+    username: 'neo4j',
+    password: 'admin',
+  },
+};
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
 
-<!-- example here -->
+Assume that we have `User` nodes in our database and we want to fetch all of them:
+
+```js
+async function all() {
+  const session = this.ctx.app.neo4j.session();
+
+  try {
+    const result = await session.run('MATCH(user:User) RETURN user');
+    return result.records.map((item) => item.get('user').properties);
+  } finally {
+    session.close();
+  }
+}
+```
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/cemremengu/egg-neo4j/issues).
+
+PRs welcome!
 
 ## License
 
